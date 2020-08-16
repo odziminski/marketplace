@@ -1,0 +1,4 @@
+RewriteEngine On  
+RewriteRule ^ad?$ ad.php
+RewriteRule ^ad/([0-9]+)  ad.php?id=$1
+

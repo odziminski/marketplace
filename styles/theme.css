@@ -1,0 +1,46 @@
+html, body{
+    font-family: 'Open Sans', sans-serif;
+    background-color:  white;
+}
+.content{
+    margin-left:10%;
+    margin-right:10%;
+}
+
+.categories{
+    margin-left:30%;
+    margin-right:30%;
+}
+
+.card{
+    
+    margin-bottom:-1.5% !important;
+    margin-top:3% !important;
+}
+
+.card img {
+    width:7em;
+    height:7em;
+}
+
+.pages{
+    margin-top:5% !important;
+}
+.single-img{
+    margin:2%;
+    height: auto; 
+    width: auto; 
+    max-width: 400px; 
+    max-height: 500px;
+}
+.table{
+    margin:4%;
+}
+.form-input input{
+    margin-top:1%;
+    margin-bottom:1%;
+}
+
+.text-margin{
+    margin:1.5%;
+}
