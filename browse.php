@@ -12,8 +12,14 @@ global $pageno;
 $filter = $_SESSION['filter_category']??null;
 $c = new Pagination;
 
-$sqlCount = "SELECT COUNT(*) as count FROM ads";
-$sql = "SELECT * FROM ads";
+$sqlCount = "
+SELECT COUNT(*) as count FROM ads
+";
+
+$sql = "
+SELECT * FROM ads
+";
+
 $where = " ";
 if (isset($_POST['filter_category_button']) || $filter)
 {
@@ -41,7 +47,7 @@ if ($total_pages > 1)
     {
 ?>
 
-<a href="advertisements/browse.php?pageno=<?=$pageno?>"><?=$pageno?></a>
+<a href="marketplace/browse.php?pageno=<?=$pageno?>"><?=$pageno?></a>
 <?php
     }
 }

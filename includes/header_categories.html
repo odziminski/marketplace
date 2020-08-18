@@ -3,12 +3,16 @@
 <meta charset="utf-8">
 
 <head>
-    <title>ad site</title>
+    <title>marketplace</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/theme.css">
-    <link rel="icon" href="/advertisements/img/icon.png">
+    <link rel="icon" href="/marketplace/img/icon.png">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <base href="/advertisements">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <base href="/marketplace">
 </head>
 
 <body>
@@ -17,18 +21,18 @@
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
-                <a class="navbar-brand" href="/advertisements/index.php"><img src="/advertisements/img/logo.png" alt="mrktplc"></a>
+                <a class="navbar-brand" href="/marketplace/index.php"><img src="/marketplace/img/logo.png" alt="mrktplc"></a>
               
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
                   <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                     <li class="nav-item active">
-                      <a class="nav-link" href="/advertisements/browse.php">Browse<span class="sr-only">(current)</span></a>
+                      <a class="nav-link" href="/marketplace/browse.php">Browse<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item active">
-                      <a class="nav-link" href="/advertisements/category.php">Create your ad<span class="sr-only">(current)</span></a>
+                      <a class="nav-link" href="/marketplace/category.php">Create your ad<span class="sr-only">(current)</span></a>
                     </li>
                   </ul>
-                  <form class="form-inline my-2 my-lg-0" action="/advertisements/search.php?pageno=1" method="POST">
+                  <form class="form-inline my-2 my-lg-0" action="/marketplace/search.php?pageno=1" method="POST">
                     <input class="form-control mr-sm-2" type="search" placeholder="Type here" aria-label="Search" name="search">
                     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
                   </form>

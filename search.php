@@ -22,11 +22,17 @@ global $total_pages;
 global $pageno;
 $c = new Pagination;
 $c->setDefaults();
-$c->countAds("SELECT COUNT(*) as count FROM ads WHERE title LIKE '%{$search}%' OR content LIKE '%{$search}%';");
+
+$c->countAds("
+SELECT COUNT(*) as count FROM ads WHERE title LIKE '%{$search}%' OR content LIKE '%{$search}%';
+");
+
 $c->PagenoOffset();
 
 
-$c->SelectLimitAd("SELECT * FROM ads WHERE title LIKE '%{$search}%' OR content LIKE '%{$search}%'");
+$c->SelectLimitAd("
+SELECT * FROM ads WHERE title LIKE '%{$search}%' OR content LIKE '%{$search}%';
+");
 
 
 if ($total_pages > 1)
@@ -36,11 +42,13 @@ if ($total_pages > 1)
     {
 ?>
 
-<a href="advertisements/search.php?pageno=<?=$pageno?>"><?=$pageno?></a>
+<a href="marketplace/search.php?pageno=<?=$pageno?>"><?=$pageno?></a>
 <?php
     }
 }
 session_destroy();
+
 ?>
+
 </div>
 

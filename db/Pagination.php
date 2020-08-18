@@ -44,7 +44,7 @@ class Pagination extends selectAdvertisement
         else
         {
             exit("<h2> Nothing to show yet. </h2>" .
-            "<a href='advertisements/index.php'><br> 
+            "<a href='marketplace/index.php'> 
             Go back to main page.");
         }
     }
@@ -71,4 +71,3 @@ class Pagination extends selectAdvertisement
     }
 
 }
-

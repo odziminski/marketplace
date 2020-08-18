@@ -6,7 +6,8 @@ $url = $_SERVER['REQUEST_URI'];
 $id = substr($url, strrpos($url, '/') + 1);
 
 $b = new SelectAdvertisement;
-$b->DisplaySingleAd("SELECT * from ads where id_ad = $id; ");
+$b->DisplaySingleAd("
+SELECT * from ads where id_ad = $id; 
+");
 
-require_once 'includes/footer.html';
 ?>
